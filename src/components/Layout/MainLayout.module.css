@@ -1,0 +1,76 @@
+.layout {
+  min-height: 100vh;
+}
+.loginItem {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+}
+
+.siteLayoutContent {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+
+.footer {
+  background-color: #f0f2f5;
+  padding: 40px 24px 20px;
+
+  /* // 顶部四栏容器 */
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    /* // 在窄屏时允许换行 */
+    justify-content: space-between;
+    gap: 40px;
+    /* // 栏间距 */
+    margin-bottom: 24px;
+  }
+
+  /* // 每一栏样式 */
+  .section {
+    flex: 1;
+    /* // 平分剩余空间 */
+    min-width: 200px;
+    /* // 保证最小宽度，超窄屏幕时自动换行 */
+
+    /* // 二级标题和文本段落 */
+    .ant-typography {
+      margin-bottom: 12px;
+    }
+    p,
+    div {
+      line-height: 1.6;
+    }
+  }
+
+  /* // 二维码项（重用） */
+  .qrCodeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .qrCodeImage {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+  }
+
+  /* // 底部版权 */
+  .bottom {
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+  }
+}
