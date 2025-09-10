@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Register.module.css'
 
 const { Title } = Typography
-// 测试第一次提交---revert
+// 测试第一次提交
 const Register = () => {
   const [form] = Form.useForm()
   const navigate = useNavigate()
