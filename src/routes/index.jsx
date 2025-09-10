@@ -5,6 +5,8 @@ import Cart from '../pages/Cart'
 import Home from '../pages/Home'
 import ProductDetail from '../pages/Products/Detail'
 import ProductList from '../pages/Products/index'
+import Register from '../pages/Register'
+import Login from '../pages/Login'
 
 // 页面组件（后续实现）
 // const Home = () => <div>首页内容</div>
@@ -20,6 +22,8 @@ const AppRoutes = () => {
         <Route path="/products" element={<ProductList />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </MainLayout>
   )
